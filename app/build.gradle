@@ -29,17 +29,22 @@ android {
     }
     sourceSets {
         stage {
-            res.srcDirs = ['src/stage/res', 'src/stage/res/']
+            res.srcDirs = ['src/stage/res/']
 //            java { srcDirs "src/stage/java" }
         }
         dev {
-            res.srcDirs = ['src/dev/res', 'src/dev/res/']
+            //res.srcDirs = ['src/dev/res', 'src/dev/res/']
+            res.srcDirs = ['src/dev/res/']
 //            java { srcDirs "src/dev/java" }
         }
         prod {
-            res.srcDirs = ['src/prod/res', 'src/prod/res/']
+            //res.srcDirs = ['src/prod/res', 'src/prod/res/']
+            res.srcDirs = ['src/prod/res/']
         }
-        main { res.srcDirs = ['src/main/res', 'src/main/res/'] }
+        main {
+            //res.srcDirs = ['src/main/res', 'src/main/res/']
+            res.srcDirs = ['src/main/res']
+        }
     }
     productFlavors {
         dev {
