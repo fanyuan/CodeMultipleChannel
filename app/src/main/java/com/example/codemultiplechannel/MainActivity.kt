@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.example.codemultiplechannel.databinding.ActivityMainBinding
+import com.sample.lib1.Lib1Utils
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,6 +14,11 @@ class MainActivity : AppCompatActivity() {
         binding.tv.run {
             append("\n\n")
             append(Utils.getStr())
+            append("\n\n")
+            append(Lib1Utils.getName())
+            append("\n\n")
         }
+
+
     }
 }
